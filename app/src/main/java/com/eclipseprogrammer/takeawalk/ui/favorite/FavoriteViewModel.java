@@ -1,16 +1,16 @@
-package com.eclipseprogrammer.takeawalk.ui.gallery;
+package com.eclipseprogrammer.takeawalk.ui.favorite;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ViewViewModel extends ViewModel {
+public class FavoriteViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public ViewViewModel() {
+    public FavoriteViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is view fragment");
+        mText.setValue("This is favorite fragment");
     }
 
     public LiveData<String> getText() {
