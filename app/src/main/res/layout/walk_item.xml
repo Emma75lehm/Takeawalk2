@@ -4,21 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
     android:id="@+id/walk_item">
 
     <TextView
         android:id="@+id/w_name"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
         style="@style/walkName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
         android:text="True skov" />
 
     <ImageView
         android:id="@+id/w_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:maxWidth="60dp"
+        android:maxHeight="60dp"
         android:src="@drawable/image_trueskov" />
-
 
 </LinearLayout>

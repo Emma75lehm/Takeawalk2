@@ -8,49 +8,55 @@
     android:id="@+id/rlmMain"
     tools:context=".ui.home.HomeFragment">
 
-   <RelativeLayout
-       android:layout_width="match_parent"
-       android:layout_height="240dp"
-       android:background="#03A9F4"
-       android:padding="16dp">
+     <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerHead"
+        android:foregroundGravity="center"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/skov"/>
 
-       <TextView
-           android:id="@+id/txtBy"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="City"
-           android:textSize="32dp"
-           android:textColor="#ffffff"
-           android:fontFamily="sans-serif-condensed-medium" />
+        <TextView
+            android:id="@+id/decription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="To see more walks - go to the website below"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_below="@id/viewPagerHead"
+            android:textStyle="bold" />
 
-       <TextView
-           android:id="@+id/txtTid"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="time"
-           android:layout_below="@id/txtBy"
-           android:textColor="#ffffff"
-           android:textSize="16dp" />
+    <Button
+        android:id="@+id/browse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/decription"
+        android:layout_marginTop="39dp"
+        android:gravity="center"
+        android:text="GotoVisitAarhus.dk" />
 
-       <ImageView
-           android:id="@+id/imgIcon"
-           android:layout_width="120dp"
-           android:layout_height="120dp"
-           android:layout_below="@id/txtTid"
-           android:src="@drawable/weather"/>
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/browse"
+        android:layout_marginTop="20dp"
+        android:text="@string/welcome"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
 
-       <TextView
-           android:id="@+id/txtVærdi"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_alignParentRight="true"
-           android:layout_alignBottom="@id/imgIcon"
-           android:text="3°"
-           android:textSize="70dp"
-           android:textColor="#ffffff"/>
-
-   </RelativeLayout>
-
-
+    <TextView
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Take A Walk"
+        android:background="@color/orange"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
 
 </RelativeLayout>

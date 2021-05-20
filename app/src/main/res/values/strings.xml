@@ -12,4 +12,8 @@
     <string name="menu_favorite">Favorite</string>
     <string name="walk_category">Different routes in Aarhus</string>
     <string name="favorite_walk">Favorite walks in Aarhus</string>
+    <string name="welcome">This app will show you some off the many walks in Aarhus - come and see the beautiful nature</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

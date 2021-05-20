@@ -22,4 +22,39 @@
         android:name="com.eclipseprogrammer.takeawalk.ui.favorite.FavoriteFragment"
         android:label="@string/menu_favorite"
         tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.eclipseprogrammer.takeawalk.RiisskovFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_test" />
+    <fragment
+        android:id="@+id/skovrutenFragment"
+        android:name="com.eclipseprogrammer.takeawalk.SkovrutenFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_skovruten" />
+    <fragment
+        android:id="@+id/arslevFragment"
+        android:name="com.eclipseprogrammer.takeawalk.ArslevFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_arslev" />
+    <fragment
+        android:id="@+id/brabrandFragment"
+        android:name="com.eclipseprogrammer.takeawalk.BrabrandFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_brabrand" />
+    <fragment
+        android:id="@+id/egaFragment"
+        android:name="com.eclipseprogrammer.takeawalk.EgaFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_ega" />
+    <fragment
+        android:id="@+id/trueFragment"
+        android:name="com.eclipseprogrammer.takeawalk.TrueFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_true" />
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="com.eclipseprogrammer.takeawalk.MapsActivity"
+        android:label="activity_maps"
+        tools:layout="@layout/activity_maps" />
 </navigation>

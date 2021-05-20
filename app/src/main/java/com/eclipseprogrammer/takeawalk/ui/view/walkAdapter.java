@@ -52,17 +52,20 @@ public class walkAdapter extends RecyclerView.Adapter<walkAdapter.ViewHolder> {
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mOnListItemClickListener.onClick(getAdapterPosition());
+                }
+
+            });
             w_name = itemView.findViewById(R.id.w_name);
             w_icon = itemView.findViewById(R.id.w_icon);
-            this.onListItemClickListener = onListItemClickListener;
-            itemView.setOnClickListener(this);
-
         }
 
         @Override
         public void onClick(View v) {
 
-            onListItemClickListener.onClick(getAdapterPosition());
         }
     }
         public interface OnListItemClickListener{

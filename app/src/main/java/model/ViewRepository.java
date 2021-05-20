@@ -17,10 +17,12 @@ public class ViewRepository {
 
         List<walk> walks = new ArrayList<>();
         walks.add(new walk("True skov",R.drawable.image_trueskov));
-        walks.add(new walk("Brabrand sø",R.drawable.brabrand));
         walks.add(new walk("Riis skov",R.drawable.image_riisskov));
         walks.add(new walk("Skovruten",R.drawable.image_skovruten));
         walks.add(new walk("Årslev engsø",R.drawable.image_arslev));
+        walks.add(new walk("Brabrand sø",R.drawable.image_brabrand));
+        walks.add(new walk("Egå engsø",R.drawable.image_ega));
+        walks.add(new walk("Kort oversigt",R.drawable.image_kort));
 
         walkLiveData.setValue(walks);
     }

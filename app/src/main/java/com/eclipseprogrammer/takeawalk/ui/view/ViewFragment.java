@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.eclipseprogrammer.takeawalk.R;
 
+import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -36,7 +37,23 @@ public class ViewFragment extends Fragment {
         walkAdapter adapter = new walkAdapter(new walkAdapter.OnListItemClickListener() {
             @Override
             public void onClick(int position) {
-                NavHostFragment.findNavController(ViewFragment.this).navigate(R.id.recyclerCategory);
+                //NavHostFragment.findNavController(ViewFragment.this).navigate(R.id.recyclerCategory);
+            if (position == 0){
+                Navigation.findNavController(ViewFragment.this.getView()).navigate(R.id.trueFragment);
+            } else if (position == 1){
+                Navigation.findNavController(ViewFragment.this.getView()).navigate(R.id.testFragment);
+            } else if (position == 2){
+                Navigation.findNavController(ViewFragment.this.getView()).navigate(R.id.skovrutenFragment);
+            } else if (position == 3){
+                Navigation.findNavController(ViewFragment.this.getView()).navigate(R.id.arslevFragment);
+            } else if (position == 4){
+                Navigation.findNavController(ViewFragment.this.getView()).navigate(R.id.brabrandFragment);
+            } else if (position == 5){
+                Navigation.findNavController(ViewFragment.this.getView()).navigate(R.id.egaFragment);
+            } else if (position == 6){
+                Navigation.findNavController(ViewFragment.this.getView()).navigate(R.id.mapsActivity);
+
+            }
             }
         });
         recyclerView.setAdapter(adapter);
