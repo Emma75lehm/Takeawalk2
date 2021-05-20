@@ -18,5 +18,12 @@ Et login, så hver bruger har en idividuel side, hvor man kan dele og logge ind(
 En vejr service, så man kunne se vejret rundt i Danmark. 
 Tælle skridt, hvis man har sin telefon med rundt på turen. 
 
+Tidligere MSCW: 
+M: Kort og være i stand til at vælge en favorit gåtur, skal ændre login og andre kontoindstillinger 
+S: Kort, login, uploade billeder fra dine gåture 
+C: Forskellige begivenheder - med venner eller grupper 
+W: chat med venner
+
+
 https://github.com/Emma75lehm/Takeawalk2.git Link til det færdige projekt 
 https://youtu.be/-G2UcitFTuw Youtube link 
